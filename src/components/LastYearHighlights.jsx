@@ -26,18 +26,18 @@ const LastYearHighlights = () => {
           <div className="relative" style={{ height: '600px' }}>
             <InfiniteSpiral
               items={spiralImages}
-              animationMode="all"
-              speed={0.35}
+              animationMode="auto"
+              speed={0.25}
               radius={180}
               cardWidth={240}
               cardHeight={180}
-              verticalSpacing={70}
-              perspective={1000}
+              verticalSpacing={60}
+              perspective={1200}
               cardRadius={12}
-              centerScale={1.25}
-              edgeBlur={6}
+              centerScale={1.2}
+              edgeBlur={4}
               cardsPerTurn={5}
-              pauseOnHover
+              pauseOnHover={false}
               imageFit="cover"
             />
           </div>

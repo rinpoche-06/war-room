@@ -83,10 +83,11 @@ const InfiniteSpiral = ({
 
       if (!scrollEnabled || !visibleRef.current || scrollDelta === 0) return;
 
+      // Smoother scroll response with smaller increments
       targetProgressRef.current += clamp(
-        (scrollDelta * scrollSpeedMultiplier) / Math.max(verticalSpacing * 2, 1),
-        -1.5,
-        1.5
+        (scrollDelta * scrollSpeedMultiplier) / Math.max(verticalSpacing * 3, 1),
+        -1.0,
+        1.0
       );
     };
 
@@ -105,11 +106,11 @@ const InfiniteSpiral = ({
           ? speed * directionMultiplier
           : 0;
 
-      const speedBlend = 1 - Math.exp(-delta * 7);
+      const speedBlend = 1 - Math.exp(-delta * 10);
       autoSpeedRef.current += (desiredAutoSpeed - autoSpeedRef.current) * speedBlend;
       targetProgressRef.current += autoSpeedRef.current * delta;
 
-      const followBlend = 1 - Math.exp(-delta * (draggingRef.current ? 22 : 11));
+      const followBlend = 1 - Math.exp(-delta * (draggingRef.current ? 25 : 15));
       progressRef.current += (targetProgressRef.current - progressRef.current) * followBlend;
 
       const count = normalizedItems.length;
