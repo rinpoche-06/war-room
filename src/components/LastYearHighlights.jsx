@@ -3,11 +3,11 @@ import InfiniteSpiral from './InfiniteSpiral'
 const LastYearHighlights = () => {
   // Spiral gallery images from War Room 1.0
   const spiralImages = [
-    { src: '/src/assets/IMG_0033.JPG', alt: 'War Room 1.0 - Team Collaboration' },
-    { src: '/src/assets/IMG_0165.JPG', alt: 'War Room 1.0 - Pitch Presentation' },
-    { src: '/src/assets/IMG_0186.JPG', alt: 'War Room 1.0 - Mentorship Session' },
-    { src: '/src/assets/IMG_0618.JPG', alt: 'War Room 1.0 - Intense Discussions' },
-    { src: '/src/assets/IMG_9941.JPG', alt: 'War Room 1.0 - Group Photo' }
+    { src: '/src/assets/IMG_0033.webp', alt: 'War Room 1.0 - Team Collaboration' },
+    { src: '/src/assets/IMG_0165.webp', alt: 'War Room 1.0 - Pitch Presentation' },
+    { src: '/src/assets/IMG_0186.webp', alt: 'War Room 1.0 - Mentorship Session' },
+    { src: '/src/assets/IMG_0618.webp', alt: 'War Room 1.0 - Intense Discussions' },
+    { src: '/src/assets/IMG_9941.webp', alt: 'War Room 1.0 - Group Photo' }
   ]
 
   return (

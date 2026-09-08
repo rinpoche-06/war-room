@@ -10,7 +10,7 @@ const Gallery = () => {
     { src: '/src/assets/IMG_0186.webp', alt: 'War Room 1.0 - Mentorship', caption: 'Mentorship sessions' },
     { src: '/src/assets/IMG_0618.webp', alt: 'War Room 1.0 - Intense Discussions', caption: 'Strategic discussions' },
     { src: '/src/assets/IMG_9941.webp', alt: 'War Room 1.0 - Group Photo', caption: 'All participants' },
-    { src: '/src/assets/hero.webp', alt: 'War Room 1.0 - Event Banner', caption: 'Event moments' }
+    { src: '/src/assets/hero.png', alt: 'War Room 1.0 - Event Banner', caption: 'Event moments' }
   ]
 
   return (
