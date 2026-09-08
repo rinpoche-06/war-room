@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Block Berthold';
+  src: url('/fonts/block-berthold-regular-2_ufonts.com.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Base Neue Trial';
+  src: url('/fonts/BaseNeueTrial-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --war-orange: #F35B04;
+    --war-orange-light: #FF7426;
+    --war-orange-dark: #D64900;
+    --war-peach: #FFEAD7;
+    --war-peach-subtle: #FFF5EC;
+    --war-dark: #121212;
+    --war-charcoal: #1C1C1E;
+    --war-border: #E5E7EB;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    color: #1A1A1A;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Block Berthold', 'Arial Black', sans-serif;
+    font-weight: 400;
+  }
+
+  .font-heading-secondary {
+    font-family: 'Base Neue Trial', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+  }
+
+  p, div, span {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .text-medium {
+    font-weight: 500;
+  }
+
+  .text-bold {
+    font-weight: 700;
+  }
+}
+
+/* Custom background patterns matching the poster grid */
+.tech-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(243, 91, 4, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(243, 91, 4, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.dot-matrix-pattern {
+  background-image: radial-gradient(rgba(243, 91, 4, 0.18) 2px, transparent 2px);
+  background-size: 20px 20px;
+}
+
+/* War Room Title Fonts */
+.war-room-title {
+  font-family: 'Block Berthold', 'Arial Black', sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #F35B04;
+  text-shadow: 0 6px 25px rgba(243, 91, 4, 0.2);
+  text-transform: uppercase;
+}
+
+.poster-subhead-font {
+  font-family: 'Base Neue Trial', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.poster-label-font {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.poster-display-bold {
+  font-family: 'Block Berthold', 'Arial Black', sans-serif;
+  font-weight: 400;
+}
+
+.orange-brace {
+  color: #F35B04;
+  font-family: 'Block Berthold', 'Arial Black', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  transform: scaleY(1.15);
+  line-height: 0.9;
+}
+
+/* Glassmorphism & Card styling */
+.war-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.war-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -4px rgba(243, 91, 4, 0.12);
+  border-color: rgba(243, 91, 4, 0.3);
+}
+
+.war-card-dark {
+  background: #1C1C1E;
+  border: 1px solid #2D2D30;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.war-card-dark:hover {
+  border-color: rgba(243, 91, 4, 0.5);
+  box-shadow: 0 12px 35px rgba(243, 91, 4, 0.2);
+}
+
+/* Buttons */
+.btn-orange {
+  background-color: #F35B04;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(243, 91, 4, 0.3);
+}
+
+.btn-orange:hover {
+  background-color: #E04800;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 91, 4, 0.45);
+}
+
+.btn-outline-orange {
+  border: 2px solid #F35B04;
+  color: #F35B04;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-orange:hover {
+  background-color: #F35B04;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(243, 91, 4, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(243, 91, 4, 0.6);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2.5s infinite;
+}
+
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle distorted grid pattern for navbar */
+.navbar-pattern {
+  background-color: #FFFFFF;
+  background-image: 
+    linear-gradient(to right, rgba(243, 91, 4, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(243, 91, 4, 0.08) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(255, 234, 215, 0.4) 0%, transparent 50%),
+    radial-gradient(circle at 30% 40%, rgba(255, 234, 215, 0.5) 0%, transparent 60%),
+    radial-gradient(circle at 70% 60%, rgba(255, 245, 236, 0.6) 0%, transparent 50%);
+  background-size: 
+    40px 40px,
+    40px 40px,
+    100% 100%,
+    500px 500px,
+    600px 600px;
+  background-position: 
+    -1px -1px,
+    -1px -1px,
+    0 0,
+    0 0,
+    100% 0;
+}
