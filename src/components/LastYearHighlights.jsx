@@ -67,7 +67,7 @@ const LastYearHighlights = () => {
 
             {/* Key Highlights */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-gray-900">Event Highlights</h3>
+              <h3 className="text-xl font-normal text-gray-900">Event Highlights</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -90,7 +90,7 @@ const LastYearHighlights = () => {
                     <div className="w-2 h-2 rounded-full bg-[#F35B04]"></div>
                   </div>
                   <p className="text-sm text-gray-700 leading-relaxed">
-                    <strong>July 26, 2025</strong> - Held at SDPK Room, College of Engineering Chengannur
+                    <strong>Empowering innovation</strong> - Empowered participants to turn ideas into practical solutions and build impactful ventures
                   </p>
                 </li>
               </ul>

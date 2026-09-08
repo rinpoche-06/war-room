@@ -45,6 +45,16 @@ const About = () => {
                 <div className="text-base sm:text-lg font-black text-gray-900">3 Members</div>
               </div>
             </div>
+
+            <div className="flex items-center gap-3 bg-white px-4 sm:px-5 md:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl shadow-sm border border-gray-200 w-full sm:w-auto">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#F35B04] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <div className="text-left">
+                <div className="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider">Registration Fee</div>
+                <div className="text-base sm:text-lg font-black text-gray-900">₹300 per Team</div>
+              </div>
+            </div>
           </div>
         </div>
 

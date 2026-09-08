@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { HelpCircle, ChevronDown, ChevronUp, MessageSquare } from 'lucide-react'
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(0)
+  const [openIndex, setOpenIndex] = useState(null)
 
   const faqs = [
     {
@@ -11,15 +11,15 @@ const FAQ = () => {
     },
     {
       q: "When and where is the event?",
-      a: "War Room 2.0 will be held on 16th August 2026 at the College of Engineering, Chengannur (CEC)."
+      a: "War Room 2.0 will be held on 13th September 2026 at the College of Engineering, Chengannur (CEC)."
     },
     {
       q: "Who can participate, and do I need a team?",
-      a: "Yes, participants compete in teams. War Room 1.0 saw 10+ teams from across the state, and War Room 2.0 expects 15+ teams and 45+ participants. Team formation details (size limits, registration process) will be shared closer to the event — check with the organizers for specifics."
+      a: "Yes, participants must compete in teams of 3 members. Open to everyone, regardless of their degree, including participants from non-B.Tech backgrounds, and irrespective of their college or location."
     },
     {
       q: "What can participants win or gain from the event?",
-      a: "Beyond the prize pool (₹20,000 in War Room 1.0), participants get hands-on experience in AI, innovation, and entrepreneurship, mentorship opportunities, exposure to sponsors for potential hiring or networking, and a chance to pitch their idea to an expert jury."
+      a: "Beyond the prize pool, participants get hands-on experience in AI, innovation, and entrepreneurship, mentorship opportunities, exposure to sponsors for potential hiring or networking, and a chance to pitch their idea to an expert jury."
     }
   ]
 
@@ -29,7 +29,7 @@ const FAQ = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 tracking-tight px-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-gray-900 tracking-tight px-2">
             Frequently Asked Questions
           </h2>
         </div>

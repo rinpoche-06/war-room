@@ -27,11 +27,6 @@ const WhatsNew = ({ onOpenRegister }) => {
       icon: <Presentation className="w-8 h-8 text-[#F35B04]" />,
       title: "Investor Pitch Showcase",
       description: "Teams present to an expert jury, demonstrating innovation, business strategy, and execution."
-    },
-    {
-      icon: <TrendingUp className="w-8 h-8 text-[#F35B04]" />,
-      title: "Talent Discovery Platform",
-      description: "A unique opportunity for sponsors to engage with high-potential innovators, future founders, and industry-ready talent."
     }
   ]
 
@@ -55,36 +50,67 @@ const WhatsNew = ({ onOpenRegister }) => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 px-3">
           <h2 className="text-3xl sm:text-4xl md:text-5xl tracking-tight">
-            <span className="font-black text-gray-900">What's New in</span> <span className="font-heading text-[#F35B04]">WAR ROOM 2.0?</span>
+            <span className="font-black text-gray-900">What's New in</span> <span className="font-heading text-[#F35B04]">WAR ROOM</span> <span className="font-heading text-gray-900">2.0?</span>
           </h2>
         </div>
 
-        {/* Feature Cards Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mb-16 sm:mb-20 px-3 sm:px-0">
-          {newFeatures.map((feat, index) => (
-            <BorderGlow
-              key={index}
-              edgeSensitivity={20}
-              glowColor="15 100 50"
-              backgroundColor="#FFFFFF"
-              borderRadius={16}
-              glowRadius={50}
-              glowIntensity={2.5}
-              coneSpread={30}
-              colors={['#F35B04', '#FF7426', '#FF8C42']}
-              fillOpacity={0.6}
-            >
-              <div className="p-5 sm:p-6 md:p-8 relative flex flex-col justify-between group h-full">
-                <div>
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center group-hover:scale-110 transition-transform mb-4 sm:mb-6">
-                    {feat.icon}
+        {/* Feature Cards Grid - Optimized for 5 cards */}
+        <div className="max-w-6xl mx-auto">
+          {/* First row: 3 cards */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mb-5 sm:mb-6 md:mb-8 px-3 sm:px-0">
+            {newFeatures.slice(0, 3).map((feat, index) => (
+              <BorderGlow
+                key={index}
+                edgeSensitivity={20}
+                glowColor="15 100 50"
+                backgroundColor="#FFFFFF"
+                borderRadius={16}
+                glowRadius={50}
+                glowIntensity={2.5}
+                coneSpread={30}
+                colors={['#F35B04', '#FF7426', '#FF8C42']}
+                fillOpacity={0.6}
+              >
+                <div className="p-5 sm:p-6 md:p-8 relative flex flex-col justify-between group h-full">
+                  <div>
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center group-hover:scale-110 transition-transform mb-4 sm:mb-6">
+                      {feat.icon}
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-normal text-gray-900 mb-2 sm:mb-3">{feat.title}</h3>
+                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">{feat.description}</p>
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">{feat.title}</h3>
-                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">{feat.description}</p>
                 </div>
-              </div>
-            </BorderGlow>
-          ))}
+              </BorderGlow>
+            ))}
+          </div>
+
+          {/* Second row: 2 cards centered */}
+          <div className="grid sm:grid-cols-2 gap-5 sm:gap-6 md:gap-8 mb-16 sm:mb-20 px-3 sm:px-0 max-w-3xl mx-auto">
+            {newFeatures.slice(3, 5).map((feat, index) => (
+              <BorderGlow
+                key={index + 3}
+                edgeSensitivity={20}
+                glowColor="15 100 50"
+                backgroundColor="#FFFFFF"
+                borderRadius={16}
+                glowRadius={50}
+                glowIntensity={2.5}
+                coneSpread={30}
+                colors={['#F35B04', '#FF7426', '#FF8C42']}
+                fillOpacity={0.6}
+              >
+                <div className="p-5 sm:p-6 md:p-8 relative flex flex-col justify-between group h-full">
+                  <div>
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center group-hover:scale-110 transition-transform mb-4 sm:mb-6">
+                      {feat.icon}
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-normal text-gray-900 mb-2 sm:mb-3">{feat.title}</h3>
+                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">{feat.description}</p>
+                  </div>
+                </div>
+              </BorderGlow>
+            ))}
+          </div>
         </div>
 
       </div>

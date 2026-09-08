@@ -7,7 +7,7 @@ const Navigation = ({ scrolled, onOpenRegister }) => {
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#warroom1', label: 'WAR ROOM 1.0' },
-    { href: '#whats-new', label: 'Whats New' },
+    { href: '#whats-new', label: "What's New" },
     { href: '#sponsors', label: 'Sponsors' },
     { href: '#faq', label: 'FAQs' },
   ]
@@ -59,10 +59,10 @@ const Navigation = ({ scrolled, onOpenRegister }) => {
                 <span className="text-base sm:text-lg font-extrabold text-[#F35B04]">CEC</span>
               </div>
             ) : (
-              // Full version: Google Developer Group / College of Engineering Chengannur
+              // Full version: Google Developer Groups On Campus / College of Engineering Chengannur
               <div className="flex flex-col">
                 <span className="text-xs sm:text-sm font-bold text-black leading-tight">
-                  Google Developer Group
+                  Google Developer Groups On Campus
                 </span>
                 <span className="text-[10px] sm:text-xs font-medium text-gray-600 leading-tight hidden xs:block">
                   College of Engineering Chengannur
