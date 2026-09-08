@@ -5,12 +5,12 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
 
   const images = [
-    { src: '/src/assets/IMG_0033.JPG', alt: 'War Room 1.0 - Team Collaboration', caption: 'Teams working together' },
-    { src: '/src/assets/IMG_0165.JPG', alt: 'War Room 1.0 - Pitch Presentation', caption: 'Pitch presentations' },
-    { src: '/src/assets/IMG_0186.JPG', alt: 'War Room 1.0 - Mentorship', caption: 'Mentorship sessions' },
-    { src: '/src/assets/IMG_0618.JPG', alt: 'War Room 1.0 - Intense Discussions', caption: 'Strategic discussions' },
-    { src: '/src/assets/IMG_9941.JPG', alt: 'War Room 1.0 - Group Photo', caption: 'All participants' },
-    { src: '/src/assets/hero.png', alt: 'War Room 1.0 - Event Banner', caption: 'Event moments' }
+    { src: '/src/assets/IMG_0033.webp', alt: 'War Room 1.0 - Team Collaboration', caption: 'Teams working together' },
+    { src: '/src/assets/IMG_0165.webp', alt: 'War Room 1.0 - Pitch Presentation', caption: 'Pitch presentations' },
+    { src: '/src/assets/IMG_0186.webp', alt: 'War Room 1.0 - Mentorship', caption: 'Mentorship sessions' },
+    { src: '/src/assets/IMG_0618.webp', alt: 'War Room 1.0 - Intense Discussions', caption: 'Strategic discussions' },
+    { src: '/src/assets/IMG_9941.webp', alt: 'War Room 1.0 - Group Photo', caption: 'All participants' },
+    { src: '/src/assets/hero.webp', alt: 'War Room 1.0 - Event Banner', caption: 'Event moments' }
   ]
 
   return (
