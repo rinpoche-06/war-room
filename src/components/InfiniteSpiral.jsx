@@ -187,7 +187,7 @@ const InfiniteSpiral = ({
     '--infinite-spiral-card-height': `${cardHeight}px`,
     '--infinite-spiral-card-radius': `${cardRadius}px`,
     cursor: animationMode === 'drag' || animationMode === 'all' ? 'grab' : 'default',
-    touchAction: animationMode === 'drag' || animationMode === 'all' ? 'pan-x' : 'auto',
+    touchAction: 'pan-y', // Always allow vertical scrolling
     userSelect: animationMode === 'drag' || animationMode === 'all' ? 'none' : 'auto'
   };
 
@@ -214,7 +214,8 @@ const InfiniteSpiral = ({
         hoveredRef.current = false;
       }}
       onPointerDown={event => {
-        if (!dragEnabled || event.button !== 0) return;
+        // Disable drag on touch devices to allow scrolling
+        if (!dragEnabled || event.button !== 0 || event.pointerType === 'touch') return;
         draggingRef.current = true;
         dragMovedRef.current = false;
         lastPointerYRef.current = event.clientY;
