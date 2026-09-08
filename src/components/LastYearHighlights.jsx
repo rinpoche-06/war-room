@@ -1,13 +1,18 @@
 import InfiniteSpiral from './InfiniteSpiral'
+import IMG_0033 from '../assets/IMG_0033.webp'
+import IMG_0165 from '../assets/IMG_0165.webp'
+import IMG_0186 from '../assets/IMG_0186.webp'
+import IMG_0618 from '../assets/IMG_0618.webp'
+import IMG_9941 from '../assets/IMG_9941.webp'
 
 const LastYearHighlights = () => {
   // Spiral gallery images from War Room 1.0
   const spiralImages = [
-    { src: '/src/assets/IMG_0033.webp', alt: 'War Room 1.0 - Team Collaboration' },
-    { src: '/src/assets/IMG_0165.webp', alt: 'War Room 1.0 - Pitch Presentation' },
-    { src: '/src/assets/IMG_0186.webp', alt: 'War Room 1.0 - Mentorship Session' },
-    { src: '/src/assets/IMG_0618.webp', alt: 'War Room 1.0 - Intense Discussions' },
-    { src: '/src/assets/IMG_9941.webp', alt: 'War Room 1.0 - Group Photo' }
+    { src: IMG_0033, alt: 'War Room 1.0 - Team Collaboration' },
+    { src: IMG_0165, alt: 'War Room 1.0 - Pitch Presentation' },
+    { src: IMG_0186, alt: 'War Room 1.0 - Mentorship Session' },
+    { src: IMG_0618, alt: 'War Room 1.0 - Intense Discussions' },
+    { src: IMG_9941, alt: 'War Room 1.0 - Group Photo' }
   ]
 
   return (

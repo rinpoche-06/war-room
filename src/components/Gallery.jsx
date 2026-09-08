@@ -1,16 +1,22 @@
 import { useState } from 'react'
 import { X } from 'lucide-react'
+import IMG_0033 from '../assets/IMG_0033.webp'
+import IMG_0165 from '../assets/IMG_0165.webp'
+import IMG_0186 from '../assets/IMG_0186.webp'
+import IMG_0618 from '../assets/IMG_0618.webp'
+import IMG_9941 from '../assets/IMG_9941.webp'
+import heroImg from '../assets/hero.png'
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
 
   const images = [
-    { src: '/src/assets/IMG_0033.webp', alt: 'War Room 1.0 - Team Collaboration', caption: 'Teams working together' },
-    { src: '/src/assets/IMG_0165.webp', alt: 'War Room 1.0 - Pitch Presentation', caption: 'Pitch presentations' },
-    { src: '/src/assets/IMG_0186.webp', alt: 'War Room 1.0 - Mentorship', caption: 'Mentorship sessions' },
-    { src: '/src/assets/IMG_0618.webp', alt: 'War Room 1.0 - Intense Discussions', caption: 'Strategic discussions' },
-    { src: '/src/assets/IMG_9941.webp', alt: 'War Room 1.0 - Group Photo', caption: 'All participants' },
-    { src: '/src/assets/hero.png', alt: 'War Room 1.0 - Event Banner', caption: 'Event moments' }
+    { src: IMG_0033, alt: 'War Room 1.0 - Team Collaboration', caption: 'Teams working together' },
+    { src: IMG_0165, alt: 'War Room 1.0 - Pitch Presentation', caption: 'Pitch presentations' },
+    { src: IMG_0186, alt: 'War Room 1.0 - Mentorship', caption: 'Mentorship sessions' },
+    { src: IMG_0618, alt: 'War Room 1.0 - Intense Discussions', caption: 'Strategic discussions' },
+    { src: IMG_9941, alt: 'War Room 1.0 - Group Photo', caption: 'All participants' },
+    { src: heroImg, alt: 'War Room 1.0 - Event Banner', caption: 'Event moments' }
   ]
 
   return (
