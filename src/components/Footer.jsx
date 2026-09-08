@@ -26,7 +26,7 @@ const Footer = ({ onOpenRegister }) => {
                 className="w-8 h-8 sm:w-9 sm:h-9 flex-shrink-0 object-contain"
               />
               <div>
-                <span className="text-xs sm:text-sm font-extrabold text-white block leading-tight">Google Developer Group</span>
+                <span className="text-xs sm:text-sm font-extrabold text-white block leading-tight">Google Developer Groups On Campus</span>
                 <span className="text-[10px] sm:text-xs text-white/80 font-medium">College Of Engineering, Chengannur</span>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Footer = ({ onOpenRegister }) => {
 
           {/* Col 3: Quick Navigation */}
           <div>
-            <h4 className="text-[10px] sm:text-xs font-black text-white/70 uppercase tracking-widest mb-3 sm:mb-4">Navigation</h4>
+            <h4 className="text-[10px] sm:text-xs font-normal text-white/70 uppercase tracking-widest mb-3 sm:mb-4">Navigation</h4>
             <ul className="space-y-2 sm:space-y-2.5 text-xs font-semibold text-white/90">
               <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
               <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
@@ -70,7 +70,7 @@ const Footer = ({ onOpenRegister }) => {
 
           {/* Col 5: Location & Contact */}
           <div>
-            <h4 className="text-[10px] sm:text-xs font-black text-white/70 uppercase tracking-widest mb-3 sm:mb-4">Contact</h4>
+            <h4 className="text-[10px] sm:text-xs font-normal text-white/70 uppercase tracking-widest mb-3 sm:mb-4">Contact</h4>
             <div className="space-y-2.5 sm:space-y-3 text-xs text-white/90 font-medium">
               <div>
                 <div className="flex items-center gap-2 mb-1.5 sm:mb-2">
