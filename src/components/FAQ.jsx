@@ -7,19 +7,23 @@ const FAQ = () => {
   const faqs = [
     {
       q: "What is War Room 2.0?",
-      a: "War Room 2.0 is an immersive 8-hour start-up simulation organized by GDG on Campus CEC. Instead of a typical hackathon, teams build a start-up from scratch — identifying a real-world problem, developing a business model, acquiring customers, and pitching to an investor jury, all while adapting to live market disruptions and challenges."
+      a: "War Room 2.0 is an 8-hour startup simulation where teams build and develop a venture while navigating real-world business challenges."
     },
     {
-      q: "When and where is the event?",
-      a: "War Room 2.0 will be held on 13th September 2026 at the College of Engineering, Chengannur (CEC)."
+      q: "How many people can be in a team?",
+      a: "Each team can have 1 to 3 participants."
     },
     {
-      q: "Who can participate, and do I need a team?",
-      a: "Yes, participants must compete in teams of 3 members. Open to everyone, regardless of their degree, including participants from non-B.Tech backgrounds, and irrespective of their college or location."
+      q: "Do I need to know coding?",
+      a: "No. War Room focuses on technology, innovation, business, strategy, and entrepreneurship, so different skills can contribute to a team."
     },
     {
-      q: "What can participants win or gain from the event?",
-      a: "Beyond the prize pool, participants get hands-on experience in AI, innovation, and entrepreneurship, mentorship opportunities, exposure to sponsors for potential hiring or networking, and a chance to pitch their idea to an expert jury."
+      q: "What happens during War Room?",
+      a: "Teams develop a solution, build a business around it, adapt to changing situations, market their product, and finally pitch their venture."
+    },
+    {
+      q: "When is War Room 2.0?",
+      a: "War Room 2.0 will be held on 13 September 2026 at the College of Engineering Chengannur (CEC), from 8:00 AM to 4:00 PM."
     }
   ]
 
