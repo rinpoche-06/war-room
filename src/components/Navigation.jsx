@@ -87,8 +87,10 @@ const Navigation = ({ scrolled, onOpenRegister }) => {
 
           {/* Desktop Register Button */}
           <div className="hidden lg:flex items-center">
-            <button
-              onClick={onOpenRegister}
+            <a
+              href="https://forms.gle/vFeM37mkf93KEkEHA"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`btn-orange rounded-xl font-bold flex items-center gap-2 group cursor-pointer transition-all duration-300 ${
                 scrolled ? 'px-5 py-2 text-sm' : 'px-6 py-2.5 text-sm'
               }`}
@@ -97,7 +99,7 @@ const Navigation = ({ scrolled, onOpenRegister }) => {
               <span className="group-hover:translate-x-1 transition-transform">
                 <ArrowRightIcon />
               </span>
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu toggle */}
@@ -125,15 +127,15 @@ const Navigation = ({ scrolled, onOpenRegister }) => {
             </a>
           ))}
           <div className="pt-3 border-t-2 border-[#FFEAD7]">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false)
-                onOpenRegister()
-              }}
+            <a
+              href="https://forms.gle/vFeM37mkf93KEkEHA"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
               className="w-full btn-orange py-3 rounded-xl text-center text-sm font-bold flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Register Now</span>
-            </button>
+            </a>
           </div>
         </div>
       )}
