@@ -28,19 +28,11 @@ const Hero = () => {
           />
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8 w-full max-w-md px-4 sm:px-0">
-          <a
-            href="https://forms.gle/vFeM37mkf93KEkEHA"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-orange px-8 sm:px-10 py-3 sm:py-4 rounded-xl text-sm sm:text-base font-bold uppercase tracking-wider shadow-lg w-full sm:w-auto text-center"
-          >
-            Register Now
-          </a>
+        {/* Learn More Button */}
+        <div className="flex justify-center mb-6 sm:mb-8">
           <a
             href="#about"
-            className="btn-outline-orange px-8 sm:px-10 py-3 sm:py-4 rounded-xl text-sm sm:text-base font-bold uppercase tracking-wider bg-white w-full sm:w-auto text-center"
+            className="btn-outline-orange px-8 sm:px-10 py-3 sm:py-4 rounded-xl text-sm sm:text-base font-bold uppercase tracking-wider bg-white"
           >
             Learn More
           </a>

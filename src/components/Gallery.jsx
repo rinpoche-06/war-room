@@ -94,17 +94,9 @@ const Gallery = () => {
             <p className="text-xl text-wr-gray mb-4">
               Want to be part of the next chapter?
             </p>
-            <p className="text-2xl font-bold gradient-text mb-8">
+            <p className="text-2xl font-bold gradient-text">
               Join us for War Room 2.0 and create your own memories! 📸
             </p>
-            <a
-              href="https://forms.gle/vFeM37mkf93KEkEHA"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-10 py-4 bg-wr-orange text-white text-lg font-bold rounded-xl hover:bg-wr-orange-light transition-all duration-300 hover:scale-105"
-            >
-              Register Now
-            </a>
           </div>
         </div>
       </div>
